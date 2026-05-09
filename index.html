@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hariharan S | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: url("h.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #FFF8DC;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    #center {
+      margin: 20px auto;
+      text-align: left;
+      width: fit-content;
+      list-style-position: inside;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      color: #00ff00;
+    }
+
+    section {
+      display: none;
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      text-align: center;
+    }
+
+    section.active {
+      display: block;
+      animation: fadeIn 0.6s ease;
+      min-height: 80vh;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: rgb(218, 201, 16);
+      font-family: "Poppins", ALGERIAN;
+    }
+
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: url("profile.jpg") no-repeat center center / cover;
+      border: 4px solid #fff;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .info {
+      text-align: justify;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    a.resume-btn {
+      background-color: #00ff00;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    a.resume-btn:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    #contact a {
+      color: aqua;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    #contact a:hover {
+      color: #ff0;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 12px 0;
+      font-size: 18px;
+    }
+
+    .contact-item i {
+      font-size: 24px;
+      color: rgb(243, 6, 223);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h2 style="color: #00ff00;">Hariharan S | Portfolio</h2>
+
+    <nav>
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('about')">About</a>
+      <a onclick="showPage('projects')">Projects</a>
+      <a onclick="showPage('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== HOME ===== -->
+  <section id="home" class="active">
+
+    <div class="profile-pic"></div>
+
+    <h1>Welcome!</h1>
+
+    <p>
+      Hi, I'm <b>Hariharan S</b> from Krishnagiri, Tamil Nadu.
+    </p>
+
+    <div class="info" style="text-align: center;">
+      Aspiring Web Developer | Learning and Creating with HTML, CSS & Java |
+      Focused on Growth and Innovation
+    </div>
+
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+
+    <h1>About Me</h1>
+
+    <p style="text-align: left;">
+
+      I’m a motivated and curious individual who loves exploring new ideas and
+      bringing them to life through creativity and dedication.
+
+      Passionate about continuous learning and growth, I strive to challenge
+      myself and achieve excellence in everything I do.
+
+      <br><br>
+
+      I believe in consistency, teamwork, and innovation, and I’m driven by
+      the desire to create meaningful work that makes a positive impact.
+
+      <br><br>
+
+      Currently pursuing a <b>B.Tech in Information Technology</b> at
+      <b>Hindusthan Institute of Technology, Coimbatore</b>,
+      I have developed skills in <b>Java, HTML and CSS</b>,
+      with a growing interest in <b>IoT and front-end development.</b>
+
+      <br><br>
+
+      Beyond academics and technology, I’m an avid sports enthusiast,
+      especially passionate about <b>cricket</b>, which inspires me to stay
+      focused, disciplined, and goal-oriented.
+
+    </p>
+
+    <!-- Resume Button -->
+    <a href="resume.pdf" class="resume-btn" target="_blank">
+      View My Resume
+    </a>
+
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+
+    <h1>My Projects</h1>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+
+      <h3>
+        Decentralized IoT & Machine Learning Framework for Hyperlocal Cloudburst Prediction
+      </h3>
+
+      <p>
+        Developed an intelligent weather prediction framework using IoT devices
+        and Machine Learning techniques for detecting hyperlocal cloudburst risks.
+        As a team member, I contributed to integrating IoT hardware,
+        real-time environmental data collection, cloud communication,
+        and ML-based prediction models to build a complete working system.
+      </p>
+
+      <ul id="center">
+        <li>Real-time sensor data collection</li>
+        <li>IoT hardware integration</li>
+        <li>Machine Learning prediction models</li>
+        <li>Cloud-based monitoring system</li>
+      </ul>
+
+      <a href="https://github.com/Hariharan-S-14/A-Decentralized-IoT-and-Machine-Learning-Framework-for-Hyperlocal-Cloudburst-Prediction/"
+        class="resume-btn" target="_blank">
+        View Project
+      </a>
+
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+
+      <h3>
+        Smart Sleep Detection & Insomnia Prediction System
+      </h3>
+
+      <p>
+        An IoT-enabled Smart Pillow designed to detect, analyze,
+        and predict insomnia through continuous sleep monitoring.
+        The system integrates multiple environmental and physiological
+        sensors to gather real-time data including light intensity,
+        body movement, head pressure, heart rate, temperature,
+        and sound levels.
+      </p>
+
+      <ul id="center">
+        <li>LDR, MEMS & Pressure sensors</li>
+        <li>Real-time physiological monitoring</li>
+        <li>Machine Learning based insomnia prediction</li>
+        <li>MongoDB database integration</li>
+      </ul>
+
+      <a href="https://github.com/Hariharan-S-14/https-github.com-mageshit24-Insomnia-Prediction-Using-IoT-Integrated-Smart-Pillow"
+        class="resume-btn" target="_blank">
+        View Project
+      </a>
+
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+
+      <h3>Secure File Storage & Sharing System</h3>
+
+      <p>
+        Built a secure cloud-based file management application using Flask.
+        The system allows users to upload, organize, and manage files
+        with authentication and session-based access control.
+      </p>
+
+      <ul id="center">
+        <li>User login & session management</li>
+        <li>Secure file upload and download</li>
+        <li>Folder-based file organization</li>
+        <li>Dashboard for managing uploaded files</li>
+        <li>Email notifications using Flask-Mail</li>
+        <li>Protected file handling using secure paths</li>
+      </ul>
+
+      <a href="https://github.com/Hariharan-S-14/Files_Store/"
+        class="resume-btn" target="_blank">
+        View Project
+      </a>
+
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+
+      <h3>Sudoku Game (Java)</h3>
+
+      <p>
+        A 9×9 Sudoku game developed using Java Swing with multiple
+        difficulty levels, auto-check functionality,
+        and an interactive graphical interface.
+      </p>
+
+      <ul id="center">
+        <li>Java Swing GUI</li>
+        <li>Multiple difficulty levels</li>
+        <li>Auto-check feature</li>
+        <li>Responsive gameplay design</li>
+      </ul>
+
+      <a href="https://github.com/Hariharan-S-14/Sudoku-Game.git"
+        class="resume-btn" target="_blank">
+        View Project
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+
+    <h1>Contact</h1>
+
+    <div class="contact-item">
+      <i class="bi bi-envelope-fill"></i>
+
+      <a href="mailto:harirgn2005@gmail.com">
+        harirgn2005@gmail.com
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <i class="bi bi-telephone-fill"></i>
+
+      <a href="tel:+916383997728">
+        +91 63839 97728
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <i class="bi bi-linkedin"></i>
+
+      <a href="https://www.linkedin.com/in/hariharan-s-b84507272"
+        target="_blank">
+        Hariharan S
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <i class="bi bi-geo-alt-fill"></i>
+
+      <span style="color: aqua;">
+        Krishnagiri, Tamil Nadu
+      </span>
+    </div>
+
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2025 Hariharan S | All Rights Reserved
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+
+    function showPage(pageId) {
+
+      document.querySelectorAll('section')
+        .forEach(sec => sec.classList.remove('active'));
+
+      document.getElementById(pageId)
+        .classList.add('active');
+
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+  </script>
+
+</body>
+
+</html>
